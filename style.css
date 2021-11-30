@@ -89,7 +89,7 @@ select {
   border-right: hidden;
   border-left: hidden;
   border-top: hidden;
-  
+  outline: none;
   height: 30px;
   background-color: inherit;
   border-bottom: 1.5px solid rgba(173, 173, 173, 0.603);
