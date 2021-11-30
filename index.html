@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FormTask</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <form class="container">
+        <div class="general-info-container">
+          <div class="heading">General Information</div>
+          <select class="title" required>
+            <option value="">Title</option>
+            <option value="Mr">Mr.</option>
+            <option value="Mrs">Mrs.</option>
+          </select>
+          <div class="fname-lname">
+            <div class="fname">
+              <input
+                type="text"
+                placeholder="First Name"
+                id="first"
+                pattern="[A-Za-z]{1,32}"
+                title="Only letters"
+                required
+              />
+            </div>
+            <div class="lname">
+              <input
+                type="text"
+                placeholder="Last Name"
+                id="last"
+                title="Only letters"
+              />
+            </div>
+          </div>
+          <select class="position" required>
+            <option value="">Position</option>
+            <option value="Junior">Junior</option>
+          </select>
+          <div class="company">
+            <input type="text" placeholder="Company" id="comp" />
+          </div>
+
+          <div class="business-employees">
+            <div class="busi">
+              <input
+                type="text"
+                placeholder="Business Arena"
+                id="business"
+                required
+              />
+            </div>
+            <div class="emp">
+              <select class="employees" required>
+                <option value="">Employees</option>
+                <option value="1">1</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="contact-details-container">
+          <div class="heading2">Contact Details</div>
+          <div class="street">
+            <input type="text" placeholder="Street + Nr" required />
+          </div>
+          <div class="add-info">
+            <input type="text" placeholder="Additional Information" />
+          </div>
+          <div class="zipcode-place">
+            <div class="zipcode">
+              <input
+                type="number"
+                pattern="^[1-9][0-9]{5}$"
+                placeholder="Zip Code"
+                required
+              />
+            </div>
+            <div class="place">
+              <select required>
+                <option value="">Place</option>
+                <option value="Chennai">Chennai</option>
+              </select>
+            </div>
+          </div>
+          <select required>
+            <option value="">Country</option>
+            <option value="India">India</option>
+          </select>
+          <div class="code-pnum">
+            <div class="code">
+              <input type="text" placeholder="Code +" required />
+            </div>
+            <div class="pnum">
+              <input
+                type="number"
+                pattern="^[6-9]\d{9}$"
+                placeholder="Phone number"
+                required
+              />
+            </div>
+          </div>
+          <div class="email">
+            <input type="email" placeholder="Your Email" required />
+          </div>
+          <div class="agreebtn">
+            <div>
+              <input type="radio" id="agree" />
+            </div>
+            <label for="agree"
+              >I do accept the <a href="#">Terms and Conditions</a><br />of your
+              site</label
+            >
+          </div>
+          <div class="registerbtn">
+            <button type="submit">Register Badge</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

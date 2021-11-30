@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+body {
+  background-image: linear-gradient(
+    150deg,
+    rgb(87, 151, 248),
+    rgba(63, 14, 238, 0.432)
+  );
+  /* background-color: rgb(87, 151, 248); */
+  font-family: sans-serif;
+}
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-basis: 70%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.general-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 30px;
+  background-color: white;
+  flex: 1;
+  border-radius: 10px 0px 0px 10px;
+}
+.contact-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 30px;
+  background-color: rgb(63, 14, 238);
+  color: whitesmoke;
+  flex: 1;
+  border-radius: 0px 10px 10px 0px;
+}
+
+a {
+  color: whitesmoke;
+}
+.heading {
+  font-size: 22px;
+  color: rgb(5, 89, 214);
+}
+.heading2 {
+  font-size: 22px;
+}
+.contact-details-container input::placeholder {
+  color: rgb(202, 199, 199);
+}
+.contact-details-container input {
+  color: aliceblue;
+}
+.contact-details-container select {
+  color: rgb(202, 199, 199);
+}
+
+.general-info-container select {
+  color: gray;
+  border-bottom: 2px solid rgb(218, 216, 216);
+}
+.general-info-container input[type="text"] {
+  border-bottom: 2px solid rgb(218, 216, 216);
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+  width: 100%;
+  border-right: hidden;
+  border-left: hidden;
+  border-top: hidden;
+  
+  height: 30px;
+  background-color: inherit;
+  border-bottom: 1.5px solid rgba(173, 173, 173, 0.603);
+
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+select {
+  cursor: pointer;
+}
+
+.fname-lname {
+  display: flex;
+  gap: 10px;
+}
+.fname,
+.lname,
+#comp,
+.employees,
+.emp,
+.busi {
+  width: 100%;
+}
+
+#first,
+#last,
+#business {
+  width: 100%;
+  border-right: hidden;
+  border-left: hidden;
+  border-top: hidden;
+}
+
+.business-employees {
+  display: flex;
+  gap: 10px;
+}
+
+.agreebtn {
+  display: flex;
+  gap: 10px;
+}
+input[type="radio"] {
+  cursor: pointer;
+}
+
+.zipcode-place,
+.code-pnum {
+  display: flex;
+  gap: 10px;
+}
+
+.zipcode,
+.place,
+code,
+.pnum {
+  width: 100%;
+}
+
+button[type="submit"] {
+  background-color: whitesmoke;
+  width: 150px;
+  height: 40px;
+  outline: none;
+  border: hidden;
+  box-shadow: 0 0 10px rgb(46, 46, 46);
+  border-radius: 100px;
+  font-weight: bolder;
+  color: rgba(17, 17, 17, 0.753);
+  cursor: pointer;
+}
+
+option {
+  color: black;
+  background-color: whitesmoke;
+}
+input[type="radio"] {
+  /* remove standard background appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* create custom radiobutton appearance */
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  padding: 3px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 1px solid #bbbbbb;
+  background-color: #e7e6e7;
+  border-radius: 50%;
+}
+
+/* appearance for checked radiobutton */
+input[type="radio"]:checked {
+  background-color: rgb(0, 255, 13);
+}
+@media screen and (max-width: 1100px) {
+  .container {
+    flex-basis: 95%;
+  }
+  .wrapper {
+    margin: 10px 0px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .container {
+    flex-direction: column;
+  }
+  .general-info-container {
+    border-radius: 10px 10px 0px 0px;
+  }
+  .contact-details-container {
+    border-radius: 0px 0px 10px 10px;
+  }
+}
